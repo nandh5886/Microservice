@@ -28,7 +28,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: adijaiswal/emailservice:latest
+        image: nanda5886/emailservice:latest
         ports:
         - containerPort: 8080
         env:
@@ -81,7 +81,7 @@ spec:
       serviceAccountName: default
       containers:
         - name: server
-          image: adijaiswal/checkoutservice:latest
+          image: nanda5886/checkoutservice:latest
           ports:
           - containerPort: 5050
           readinessProbe:
